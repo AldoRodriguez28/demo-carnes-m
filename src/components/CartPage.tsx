@@ -77,9 +77,9 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
               {items.map((item) => (
                 <div
                   key={`${item.type}-${item.slug}`}
-                  className="flex gap-4 p-4 sm:p-5 border border-gray-200 rounded-2xl shadow-sm"
+                  className="flex flex-col sm:flex-row gap-4 p-4 sm:p-5 border border-gray-200 rounded-2xl shadow-sm"
                 >
-                  <div className="w-24 h-24 rounded-xl overflow-hidden bg-gray-100">
+                  <div className="w-full sm:w-24 h-48 sm:h-24 rounded-2xl overflow-hidden bg-gray-100">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -160,7 +160,7 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
                 </button>
                 <button
                   onClick={() => (onNavigate ? onNavigate('/') : onBack())}
-                  className="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-white/20 text-white font-semibold hover:border-white/40 hover:bg-white/5 transition"
+                  className="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-white/40 text-black font-semibold bg-white/90 hover:bg-white hover:text-black transition"
                 >
                   Seguir comprando
                 </button>

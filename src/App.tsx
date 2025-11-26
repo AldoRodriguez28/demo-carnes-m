@@ -11,6 +11,7 @@ import { ProductDetail } from './components/ProductDetail';
 import { CajitaDetail } from './components/CajitaDetail';
 import { CartPage } from './components/CartPage';
 import { CartProvider, useCart } from './contexts/CartContext';
+import { FlujoPedido } from './components/FlujoPedido';
 
 function useScrollReveal(deps: unknown[]) {
   useEffect(() => {
@@ -129,6 +130,7 @@ function AppContent() {
     <div className="min-h-screen bg-white">
       <Navbar onNavigate={navigate} />
       <Hero />
+      <FlujoPedido />
       <CajitasFelices onNavigate={navigate} />
       <Categorias onNavigate={navigate} />
       <ArmaTuCajita />
