@@ -1,0 +1,31 @@
+# Node / dependencies
+node_modules/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Env files
+.env
+.env.*
+
+# Editor & OS
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Testing / coverage
+coverage/
+.nyc_output
+
+# Misc
+tmp/
+*.tmp
+*.bak
