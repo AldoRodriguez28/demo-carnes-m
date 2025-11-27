@@ -1676,6 +1676,75 @@ html {
   animation-play-state: running;
 }
 
+/* CTA ghost para fondos oscuros (desktop) */
+.cta-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.25s ease;
+}
+
+.cta-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+/* Cart layout helpers to fix md+ view without missing utilities */
+.cart-shell {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .cart-shell {
+    padding: 3.5rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cart-shell {
+    padding: 4rem 3rem;
+  }
+}
+
+.cart-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .cart-grid {
+    grid-template-columns: 1fr 0.95fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cart-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+/* Radius utilities missing from generated CSS */
+.rounded-2xl { border-radius: 1rem; }
+.rounded-3xl { border-radius: 1.5rem; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem; /* 20px */
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem; /* 24px */
+  }
+}
+
 @keyframes soft-pulse {
   0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(214, 40, 40, 0.35); }
   50% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(214, 40, 40, 0); }
