@@ -49,7 +49,7 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
         <div className="flex items-center justify-between mb-8">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black bg-white text-black text-sm font-semibold hover:bg-gray-100 transition"
           >
             <ArrowLeft size={18} />
             Seguir comprando
@@ -131,7 +131,7 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
               ))}
             </div>
 
-            <aside className="bg-[#0B0B0B] text-white rounded-3xl p-6 sm:p-8 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.6)] space-y-4">
+            <aside className="bg-[#000000] text-white rounded-3xl p-6 sm:p-8 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.6)] space-y-4">
               <h2 className="text-2xl font-black">Resumen</h2>
               <div className="space-y-2 text-sm text-white/80">
                 <div className="flex justify-between">
@@ -160,7 +160,7 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
                 </button>
                 <button
                   onClick={() => (onNavigate ? onNavigate('/') : onBack())}
-                  className="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-white/40 text-black font-semibold bg-white/90 hover:bg-white hover:text-black transition"
+                  className="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-black text-[#000000] font-semibold bg-white hover:bg-gray-100 transition"
                 >
                   Seguir comprando
                 </button>
