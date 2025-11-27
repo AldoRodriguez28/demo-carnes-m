@@ -90,7 +90,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
           </div>
 
           {/* Chris Do: Acciones limpias - Menos es más */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-12">
             {/* Phone - Chris Do: Minimalista */}
             <a
               href="tel:+52"
@@ -120,17 +120,17 @@ export function Navbar({ onNavigate }: NavbarProps) {
 
             {/* Mobile Menu Toggle - Chris Do: Simple y directo */}
             <button
-            className="md:hidden flex items-center justify-center min-w-[48px] min-h-[48px] text-white hover:text-[#D62828] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white active:scale-95"
-            aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
-            aria-expanded={menuOpen}
-            aria-controls="mobile-menu"
-            onClick={toggleMenu}
-            ref={menuButtonRef}
-          >
-            <Menu size={24} strokeWidth={2} />
-          </button>
+              className="md:hidden flex items-center justify-center min-w-[48px] min-h-[48px] text-white hover:text-[#D62828] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white active:scale-95"
+              aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              onClick={toggleMenu}
+              ref={menuButtonRef}
+            >
+              <Menu size={24} strokeWidth={2} />
+            </button>
+          </div>
         </div>
-      </div>
 
         {/* Chris Do: Overlay minimalista */}
         <div
@@ -166,7 +166,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
             <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-1.5 rounded-full bg-black/10" aria-hidden="true" />
 
             {/* Navegación - Tipografía BOLD, rectángulos sharp */}
-            <nav className="flex flex-col gap-2 mb-8">
+            <nav className="flex flex-col gap-8 mb-8">
               <a
                 href="#cajitas"
                 className="flex items-center min-h-[56px] px-6 text-2xl font-semibold text-black hover:text-[#B22222] hover:bg-black/3 transition-all duration-200 uppercase tracking-tight active:scale-[0.99]"

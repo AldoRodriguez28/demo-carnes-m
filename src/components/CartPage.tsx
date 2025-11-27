@@ -45,7 +45,7 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
   return (
     <main className="min-h-screen bg-white text-black">
       <Navbar onNavigate={onNavigate} />
-      <section className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16">
+      <section className="cart-shell">
         <div className="flex items-center justify-between mb-8">
           <button
             onClick={onBack}
@@ -72,7 +72,7 @@ export function CartPage({ items, onBack, onNavigate, onUpdateQuantity, onRemove
             </button>
           </div>
         ) : (
-          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="cart-grid">
             <div className="space-y-4">
               {items.map((item) => (
                 <div
